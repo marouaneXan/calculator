@@ -40,20 +40,7 @@ public class Calculator {
         return res;
     }
 
-    public boolean isOperator(String s){
-        String o="+-*/";
-        String[] arrOp=o.split("");
-        for(String str:arrOp){
-           if(str.equals(s)) return true;
-        }return false;
-    }
-
-    public boolean isNumber(String s){
-        if(Integer.parseInt(s)>0 || Integer.parseInt(s)<9) return true;
-        return false;
-    }
-
     public double toNumber(String s){
-        return Integer.parseInt(s);
+        return Double.parseDouble(s);
     }
 }

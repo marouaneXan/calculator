@@ -7,7 +7,7 @@ import org.example.calculator.Calculator;
 public class Main {
     public static void main(String[] args) {
         Calculator c=new Calculator();
-        String s="12-100+2-89";
+        String s="1.1+1";
         double res=c.calcul(s);
         System.out.println(res);
     }
